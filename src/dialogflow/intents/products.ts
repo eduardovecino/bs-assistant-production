@@ -11,7 +11,6 @@ export class ProductIntents extends BaseIntent {
     }
 
     public intents(app): void {
-        
         console.log('Registering Products Intents');
 
         // app.intent('Default Welcome Intent', conv => {
