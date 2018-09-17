@@ -26,19 +26,19 @@ export class ProductIntents extends BaseIntent {
         });
 
         // Create a Dialogflow intent with the `actions_intent_PERMISSION` event
-        /*app.intent('Get Permission', (conv, params, confirmationGranted) => {
+        app.intent('Get Permission', (conv, params, confirmationGranted) => {
             conv.ask(`Bienvenido a Banco Sabadell`);
             const { name } = conv.user;
             if (confirmationGranted) {
                 if (name) {
                     conv.ask(`Bienvenido a Banco Sabadell, ${name.display}`);
-                    this.suggestions(conv);
+                    // this.suggestions(conv);
                 }
             } else {
                 conv.ask(`I can't read your mind right now! My mystical powers have failed!`);
             }
         });
-
+/*
         //Iniciar Sesión
         app.intent('Iniciar Sesion', (conv) => {
             conv.ask(`Vamos a iniciar sesión`);
